@@ -1,4 +1,5 @@
 // src/components/NavbarDashboard.tsx
+import { Link } from '@tanstack/react-router'
 import icon from '../assets/icon.png'
 import '../styles/NavbarDashboard.css'
 
@@ -23,7 +24,9 @@ const NavbarDashboard = ({
   return (
     <nav className="navbar_dashboard">
       <div className="site_logo">
-        <img src={icon} alt="DXF Icon" className="logo_image" />
+        <Link to="/">
+          <img src={icon} alt="DXF Icon" className="logo_image" />
+        </Link>
       </div>
 
       <form className="search_section" onSubmit={handleSubmit}>

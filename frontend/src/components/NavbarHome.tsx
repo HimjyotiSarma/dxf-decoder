@@ -2,11 +2,14 @@ import icon from '../assets/icon.png'
 import { MdEmail } from 'react-icons/md'
 import { FaGithubAlt } from 'react-icons/fa'
 import '../styles/NavbarHome.css'
+import { Link } from '@tanstack/react-router'
 const NavbarHome = () => {
   return (
     <nav className="navbar_home">
       <div className="site_logo">
-        <img src={icon} alt="Dxf Decoder Icon" className="logo_image" />
+        <Link to="/">
+          <img src={icon} alt="Dxf Decoder Icon" className="logo_image" />
+        </Link>
       </div>
       <div className="developer_details">
         <div className="email_section">

@@ -1,8 +1,8 @@
 import { DataTypes } from 'sequelize'
 import sequelize from '../config/sequelize.js'
 import path from 'path'
-import { fileExists } from '../../services/file.services.js'
 import { createFileHash } from '../../utils/FileHash.js'
+import fs from 'fs/promises'
 
 const File = sequelize.define('File', {
   id: {
@@ -30,7 +30,10 @@ File.beforeCreate(async (file) => {
   if (!hash) throw new Error('File hash could not be created')
 
   const exists = await File.findOne({ where: { file_hash: hash } })
-  if (exists) throw new Error('File already exists')
+  if (exists) {
+    fs.unlink(filePath)
+    throw new Error('File already exists')
+  }
 
   file.file_hash = hash
 })

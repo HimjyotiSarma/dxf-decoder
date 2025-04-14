@@ -91,6 +91,17 @@ function App() {
           </div>
         )}
         {error && <div className="error-message">{error}</div>}
+        {error && error.includes('File already exists') && (
+          <button
+            type="button"
+            className="go_to_files_btn"
+            onClick={() =>
+              navigate({ to: '/files', search: { page: '1', limit: '20' } })
+            }
+          >
+            Show All Files
+          </button>
+        )}
       </div>
     </div>
   )

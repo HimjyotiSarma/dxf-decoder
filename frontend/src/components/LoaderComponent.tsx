@@ -1,5 +1,3 @@
-import '../styles/LoaderComponent.css'
-
 const LoaderComponent = () => {
   return (
     <div className="loader-container">

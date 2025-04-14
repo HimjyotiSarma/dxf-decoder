@@ -33,6 +33,13 @@ function RouteComponent() {
 
   return (
     <div className="file-details-container">
+      <Link
+        to="/files"
+        className="back-link"
+        search={{ page: '1', limit: '20' }}
+      >
+        ← Back to Files
+      </Link>
       <h1 className="file-title">{file.file_name}</h1>
 
       <section className="file-meta">

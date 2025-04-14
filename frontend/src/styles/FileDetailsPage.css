@@ -38,6 +38,12 @@
   margin-top: 2rem;
 }
 
+.back-link {
+  font-size: 0.9rem;
+  color: #3498db;
+  text-decoration: none;
+}
+
 .layer-section h2,
 .block-section h2,
 .entity-section h2 {
