@@ -1,0 +1,80 @@
+.file-details-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.file-title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #1a202c;
+}
+
+.file-meta p {
+  margin: 0.3rem 0;
+  color: #4a5568;
+}
+
+.summary-counters {
+  display: flex;
+  gap: 2rem;
+  margin: 1.5rem 0;
+  font-size: 1.1rem;
+}
+
+.summary-counters a {
+  text-decoration: none;
+  color: #2b6cb0;
+}
+
+.layer-section,
+.block-section,
+.entity-section {
+  margin-top: 2rem;
+}
+
+.layer-section h2,
+.block-section h2,
+.entity-section h2 {
+  font-size: 1.4rem;
+  color: #2b6cb0;
+  margin-bottom: 0.5rem;
+}
+
+.layer-section ul,
+.block-section ul,
+.entity-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.layer-section li,
+.block-section li,
+.entity-section li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #edf2f7;
+}
+
+.layer-section li a,
+.block-section li a,
+.entity-section li a {
+  text-decoration: none;
+  color: #2b6cb0;
+  font-weight: 500;
+}
+
+.layer-info,
+.block-info,
+.entity-info {
+  font-size: 0.9rem;
+  color: #4a5568;
+  margin-left: 1rem;
+}

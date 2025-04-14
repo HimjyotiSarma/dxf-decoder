@@ -1,0 +1,64 @@
+.entity-details-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.entity-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.entity-title {
+  font-size: 1.6rem;
+  color: #2c3e50;
+}
+
+.back-link {
+  font-size: 0.9rem;
+  color: #3498db;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.entity-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+  color: #34495e;
+}
+
+.entity-meta div {
+  background: #f7f9fa;
+  padding: 0.6rem;
+  border-radius: 4px;
+}
+
+.entity-properties {
+  margin-top: 2rem;
+}
+
+.entity-properties h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.entity-properties pre {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}

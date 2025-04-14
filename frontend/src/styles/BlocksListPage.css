@@ -1,0 +1,57 @@
+.blocks-list-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.blocks-heading {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.blocks-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.block-card {
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.block-card:hover {
+  transform: translateY(-2px);
+}
+
+.block-link {
+  text-decoration: none;
+  color: #2c3e50;
+  display: block;
+}
+
+.block-link h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1.2rem;
+  color: #007a3d;
+}
+
+.block-link p {
+  margin: 0.2rem 0;
+  font-size: 0.95rem;
+}
+
+.loading-text,
+.no-results {
+  text-align: center;
+  font-size: 1rem;
+  color: #888;
+  margin-top: 2rem;
+}

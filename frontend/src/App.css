@@ -1,0 +1,73 @@
+/* IntroPage.css */
+
+.intro-page {
+  min-height: 80vh;
+  background: linear-gradient(to bottom right, #d4edda, #155724);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+.intro-container {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 2rem 3rem;
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+}
+
+.intro-heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.intro-description {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.file-input {
+  padding: 0.6rem;
+  border: 2px solid #28a745;
+  border-radius: 0.5rem;
+  background: #fff;
+  color: #155724;
+  font-weight: 500;
+}
+
+.upload-button {
+  background-color: #ffc107;
+  color: #000;
+  font-weight: bold;
+  padding: 0.6rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-button:hover {
+  background-color: #e0a800;
+}
+.processing-message {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #155724;
+}
+.error-message {
+  color: #dc3545;
+  font-size: 1rem;
+  margin-top: 1rem;
+}

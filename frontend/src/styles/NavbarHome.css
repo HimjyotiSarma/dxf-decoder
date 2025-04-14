@@ -1,0 +1,89 @@
+/* NavbarHome.css */
+
+.navbar_home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 0.75rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.site_logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo_image {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.developer_details {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.email_section,
+.github_section {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.email_section a,
+.github_section a {
+  text-decoration: none;
+  color: #0a2d02;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.email_section a:hover,
+.github_section a:hover {
+  color: #00bcd4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar_home {
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .navbar_home .site_logo {
+    flex: 1;
+    padding: 0;
+  }
+  .navbar_home .developer_details {
+    flex: 1;
+    justify-content: flex-end;
+  }
+
+  .developer_details {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .email_section a,
+  .github_section a {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo_image {
+    max-width: 75px;
+    max-height: 75px;
+  }
+
+  .email_section a,
+  .github_section a {
+    font-size: 0.8rem;
+  }
+}
