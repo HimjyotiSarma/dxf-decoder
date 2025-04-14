@@ -41,7 +41,7 @@ A full‑stack web application that allows users to upload, parse, and interacti
 
 - **Backend**: Node.js, Express.js, Sequelize ORM, PostgreSQL
 - **Frontend**: React, Vite, TanStack Router, Axios
-- **Parsing & Visualization**: `dxf-parser`, `dxf2svg`, `sharp`
+- **Parsing & Visualization**: `dxf-parser`
 - **File Upload**: `multer`
 - **Testing**: Jest, Supertest
 
