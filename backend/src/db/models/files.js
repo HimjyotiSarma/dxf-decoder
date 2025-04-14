@@ -31,7 +31,7 @@ File.beforeCreate(async (file) => {
 
   const exists = await File.findOne({ where: { file_hash: hash } })
   if (exists) {
-    fs.unlink(filePath)
+    await fs.unlink(filePath)
     throw new Error('File already exists')
   }
 
