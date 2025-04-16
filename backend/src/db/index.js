@@ -33,7 +33,7 @@ export const connectDB = async () => {
     Block.hasMany(Entity, { foreignKey: 'block_id', onDelete: 'CASCADE' })
     Entity.belongsTo(Block, { foreignKey: 'block_id' })
     // Sync the database (create tables if they don't exist)
-    const data = await sequelize.sync({ force: true })
+    const data = await sequelize.sync()
     console.log('Database synced successfully')
   } catch (error) {
     console.error('Unable to connect to the database:', error)
